@@ -8,4 +8,5 @@ RUN apt install python3 python3-pip build-essential zlib1g-dev libncurses5-dev l
 COPY . /app
 # COPY ./sub/*.txt sub/
 RUN pip3 install discord
+ENV token=ODI1NzI2MjEyOTY1MDA3Mzgw.YGCHdg.uuOpiHb79T4ZiUQNguoUZ6JOals
 CMD ["bash","run.sh"]
