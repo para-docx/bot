@@ -36,5 +36,14 @@ async def on_message(message):
   if message.content.startswith('$exokn'):
    await message.channel.send('shut up jedi-prime was way better')
   
+  if message.content.startswith('$tiger'):
+   await message.channel.send('the mama bean')
+
+  if message.content.startswith('$Bam'):
+   await message.channel.send('Vroom is best') 
+
+  if message.content.startswith('$skugg'):
+   await message.channel.send('Yo SEXY man')  
+  
 
 client.run(os.getenv('token'))
