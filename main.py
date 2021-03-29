@@ -37,5 +37,4 @@ async def on_message(message):
    await message.channel.send('shut up jedi-prime was way better')
   
 
-
-client.run("ODI1NzI2MjEyOTY1MDA3MzgwYGCHdguuOpiHb79T4ZiUQNguoUZ6JOals")
+client.run(os.getenv('token'))
