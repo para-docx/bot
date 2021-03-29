@@ -38,4 +38,4 @@ async def on_message(message):
   
 
 
-client.run(os.getenv('token'))
+client.run("ODI1NzI2MjEyOTY1MDA3MzgwYGCHdguuOpiHb79T4ZiUQNguoUZ6JOals")
