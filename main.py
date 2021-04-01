@@ -5,6 +5,8 @@ import json
 
 client = discord.Client()
 
+keyword = ["sus"]
+
 def get_quote():
   response = requests.get("https://zenquotes.io/api/random")
   json_data = json.loads(response.text)
