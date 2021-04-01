@@ -45,5 +45,13 @@ async def on_message(message):
   if message.content.startswith('$skugg'):
    await message.channel.send('Yo SEXY man')  
   
+  
+@client.event
+async def my_message(message):
+  for i in range(len(keyword)):
+    if keyword in message.content:
+      for j in range(10):
+        await message.channel.sent('STOP POSTING ABOUT AMONG US,IM TIRED OF SEEING THIS')
+  
 
 client.run(os.getenv('token'))
