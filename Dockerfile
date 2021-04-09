@@ -9,6 +9,6 @@ COPY . /app
 # COPY ./sub/*.txt sub/
 RUN pip3 install discord
 RUN pip3 install requests
-Run pip3 install aiohttp
+RUN pip3 install aiohttp
 ENV token=ODI1NzI2MjEyOTY1MDA3Mzgw.YGCHdg.uuOpiHb79T4ZiUQNguoUZ6JOals
 CMD ["bash","run.sh"]
