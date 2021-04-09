@@ -1,6 +1,7 @@
 import discord
 import requests 
 import json
+import os
 from discord.ext import commands, tasks
 from random import choice
 import aiohttp
