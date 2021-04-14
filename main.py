@@ -51,6 +51,30 @@ async def dogpics(ctx):
     embed.set_image(url=dogjson['link'])
     await ctx.send(embed=embed) #send message
 
+@client.command(name= 'pikachu')
+async def pikachu(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get('https://some-random-api.ml/img/pikachu') #requests
+        pikajson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "pika pika!!!", color=discord.Colour.purple())    
+    embed.set_image(url=pikajson['link'])
+    await ctx.send(embed=embed) #send message   
+
+@client.command(name= 'kanye')
+async def kanye(ctx):
+   response = requests.get("https://api.kanye.rest")
+   json_data = json.loads(response.text)
+   quote = json_data['quote'] 
+   await ctx.send(quote)
+
+@client.command(name= 'friends')   
+async def friends(ctx):
+   response = requests.get("https://friends-quotes-api.herokuapp.com/quotes/random")
+   json_data = json.loads(response.text)
+   quote = json_data['quote']+ " -" + json_data['character']
+   await ctx.send(quote)	
+	
+
 
 
 
