@@ -9,7 +9,7 @@ import aiohttp
 
 client = commands.Bot(command_prefix="#")
 
-status = ["sus","hey hey","your so sussy", "19$ fortnite card"]
+status = ["sus","hey hey","your so sussy", "19$ fortnite card", "sheeeeesh", "lessssgooo"]
 
 
 @client.event
