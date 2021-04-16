@@ -76,7 +76,7 @@ async def friends(ctx):
 	
 
 @client.command(name= 'neko')
-async def pikachu(ctx):
+async def neko(ctx):
     async with aiohttp.ClientSession() as session:
         requests = await session.get("https://some-random-api.ml/img/cat") #requests
         nekojson = await requests.json() #json file comversion
