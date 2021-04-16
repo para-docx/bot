@@ -72,10 +72,21 @@ async def friends(ctx):
    response = requests.get("https://friends-quotes-api.herokuapp.com/quotes/random")
    json_data = json.loads(response.text)
    quote = json_data['quote']+ " -" + json_data['character']
-   await ctx.send(quote)	
+   await ctx.send(quote)
 	
 
-
+@client.command(name= 'neko')
+async def pikachu(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get("https://some-random-api.ml/img/cat") #requests
+        nekojson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "kore nani kore nani kore nani!!!", color=discord.Colour.purple())    
+    embed.set_image(url=nekojson['link'])
+    await ctx.send(embed=embed) #send message   	
+	
+	
+	
+	
 
 
 @tasks.loop(seconds=20)
