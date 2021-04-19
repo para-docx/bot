@@ -11,5 +11,6 @@ RUN pip3 install discord
 RUN pip3 install requests
 RUN pip3 install aiohttp
 RUN pip3 install youtube_dl
+Run apt install ffmpeg
 ENV token=ODI1NzI2MjEyOTY1MDA3Mzgw.YGCHdg.uuOpiHb79T4ZiUQNguoUZ6JOals
 CMD ["bash","run.sh"]
