@@ -5,7 +5,7 @@ import os
 from discord.ext import commands, tasks
 from random import choice
 import aiohttp
-import youtube_dl
+
 
 client = commands.Bot(command_prefix="#")
 
