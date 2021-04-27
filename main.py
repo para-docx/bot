@@ -84,6 +84,14 @@ async def neko(ctx):
     embed.set_image(url=nekojson['link'])
     await ctx.send(embed=embed) #send message   	
 	
+@client.command(name= 'nasa', help='nasa pic of the day')
+async def nasa(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get('https://api.nasa.gov/planetary/apod?api_key=7xKltd5lPuRF7sgqb5ADJFRsma0gFaB6BosJ9nsA') #requests
+        nasajson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "Nasa pic of the day", color=discord.Colour.purple())    
+    embed.set_image(url=nasajson['hdurl'])
+    await ctx.send(embed=embed) #send message	
 
 	
 @tasks.loop(seconds=20)
