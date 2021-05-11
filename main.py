@@ -93,6 +93,17 @@ async def nasa(ctx):
     embed.set_image(url=nasajson['hdurl'])
     await ctx.send(embed=embed) #send message	
 
+
+@client.command(name= 'inu', help='doge')
+async def inu(ctx):
+    doge = ['https://image.shutterstock.com/image-vector/kawaii-shiba-inu-dogs-various-600w-1280941399.jpg', 'https://image.shutterstock.com/image-vector/cute-shiba-inu-head-emotions-600w-731808382.jpg', 'https://image.freepik.com/free-vector/cute-shiba-inu-dog-astronaut-sitting-cartoon-icon-illustration_138676-2797.jpg', 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/dog1.jpg?bwcnVhNjzF2qX4wcVgHjvdr1qrqTMmMB&size=770:433']
+    reply = choice (doge)
+    await ctx.send(reply) #send message
+
+@client.command(name= "toge")
+async def toge(ctx):
+    inumaki = ['Shake', 'Okaka', 'Tsunamayo', 'Tsuna', 'Takana', 'Mentaiko', 'Konbu', 'Ikura', 'Sujiko', 'https://tenor.com/view/toge-inumaki-jujutsu-kaisen-anime-gif-20440927', 'https://tenor.com/view/toge-inumaki-okaka-jujutsu-kaisen-gif-19663987']
+    await ctx.send(choice (inumaki)) #send message
 	
 @tasks.loop(seconds=20)
 async def change_status():
