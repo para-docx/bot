@@ -108,6 +108,11 @@ async def toge(ctx):
 @client.command(name= "atlas")  
 async def atlas(ctx):
     await ctx.send('https://media.tenor.com/images/0275ba87c8931140e67419708282d0ab/tenor.gif')	
+
+@client.command(name= "batman")
+async def batman(ctx):
+	bruce = ['https://cdn.discordapp.com/attachments/779580860935831613/841895402931355648/video0.mp4', 'https://cdn.discordapp.com/attachments/779572154567622682/841097690841743370/3337CF3B-203E-46A5-903B-17430819B3CA.mov', 'Batman Fortnite', 'I am Batman']
+	await ctx.send(choice (bruce)	 
 	
 @tasks.loop(seconds=20)
 async def change_status():
