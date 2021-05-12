@@ -112,7 +112,7 @@ async def atlas(ctx):
 @client.command(name= "batman")
 async def batman(ctx):
 	bruce = ['https://cdn.discordapp.com/attachments/779580860935831613/841895402931355648/video0.mp4', 'https://cdn.discordapp.com/attachments/779572154567622682/841097690841743370/3337CF3B-203E-46A5-903B-17430819B3CA.mov', 'Batman Fortnite', 'I am Batman']
-	await ctx.send(choice (bruce)	 
+	await ctx.send(choice (bruce))	 
 	
 @tasks.loop(seconds=20)
 async def change_status():
