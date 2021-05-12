@@ -105,6 +105,10 @@ async def toge(ctx):
     inumaki = ['Shake', 'Okaka', 'Tsunamayo', 'Tsuna', 'Takana', 'Mentaiko', 'Konbu', 'Ikura', 'Sujiko', 'https://tenor.com/view/toge-inumaki-jujutsu-kaisen-anime-gif-20440927', 'https://tenor.com/view/toge-inumaki-okaka-jujutsu-kaisen-gif-19663987']
     await ctx.send(choice (inumaki)) #send message
 	
+@client.command(name= "atlas")  
+async def atlas(ctx):
+    await ctx.send('https://media.tenor.com/images/0275ba87c8931140e67419708282d0ab/tenor.gif')	
+	
 @tasks.loop(seconds=20)
 async def change_status():
 	await client.change_presence(activity=discord.Game(choice(status)))
