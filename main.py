@@ -25,19 +25,19 @@ async def inspire(ctx):
     quote = json_data[0]['q'] + " -" + json_data[0]['a']
     await ctx.send(quote)
 
-@client.command(name='tiger' help= 'custom command') 
+@client.command(name='tiger', help= 'custom command') 
 async def tiger(ctx):
     await ctx.send('The Mama Bean')    
 
-@client.command(name='skugg' help= 'custom command') 
+@client.command(name='skugg', help= 'custom command') 
 async def skugg(ctx):
     await ctx.send('Aeyo Sexy Man')
 
-@client.command(name='jedi' help= 'custom command') 
+@client.command(name='jedi', help= 'custom command') 
 async def jedi(ctx):
     await ctx.send('Dripped out in swag, flooded in sadness') 
 
-@client.command(name='crimsonwolf' help= 'custom command') 
+@client.command(name='crimsonwolf', help= 'custom command') 
 async def crimsonwolf(ctx):
     await ctx.send('Aeyo its the wolf :wolfpoggers:go check him out at twitch.tv/twitch_chase05')  
                    
@@ -51,7 +51,7 @@ async def dogpics(ctx):
     embed.set_image(url=dogjson['link'])
     await ctx.send(embed=embed) #send message
 
-@client.command(name= 'pikachu' help= 'try it you will like it')
+@client.command(name= 'pikachu', help= 'try it you will like it')
 async def pikachu(ctx):
     async with aiohttp.ClientSession() as session:
         requests = await session.get('https://some-random-api.ml/img/pikachu') #requests
@@ -60,14 +60,14 @@ async def pikachu(ctx):
     embed.set_image(url=pikajson['link'])
     await ctx.send(embed=embed) #send message   
 
-@client.command(name= 'kanye' help= 'does it need any expaining')
+@client.command(name= 'kanye', help= 'does it need any expaining')
 async def kanye(ctx):
    response = requests.get("https://api.kanye.rest")
    json_data = json.loads(response.text)
    quote = json_data['quote'] 
    await ctx.send(quote)
 
-@client.command(name= 'friends' help= 'try it you will like it')   
+@client.command(name= 'friends', help= 'try it you will like it')   
 async def friends(ctx):
    response = requests.get("https://friends-quotes-api.herokuapp.com/quotes/random")
    json_data = json.loads(response.text)
@@ -75,7 +75,7 @@ async def friends(ctx):
    await ctx.send(quote)
 	
 
-@client.command(name= 'neko' help='kawaii neko')
+@client.command(name= 'neko', help='kawaii neko')
 async def neko(ctx):
     async with aiohttp.ClientSession() as session:
         requests = await session.get("https://some-random-api.ml/img/cat") #requests
@@ -100,18 +100,18 @@ async def inu(ctx):
     reply = choice (doge)
     await ctx.send(reply) #send message
 
-@client.command(name= "toge")
+@client.command(name= "toge", help= 'Shake')
 async def toge(ctx):
     inumaki = ['Shake', 'Okaka', 'Tsunamayo', 'Tsuna', 'Takana', 'Mentaiko', 'Konbu', 'Ikura', 'Sujiko', 'https://tenor.com/view/toge-inumaki-jujutsu-kaisen-anime-gif-20440927', 'https://tenor.com/view/toge-inumaki-okaka-jujutsu-kaisen-gif-19663987']
     await ctx.send(choice (inumaki)) #send message
 	
-@client.command(name= "atlas" help= 'Shitland Official')  
+@client.command(name= "atlas", help= 'Shitland Official')  
 async def atlas(ctx):
     so = ['https://im2.ezgif.com/tmp/ezgif-2-aba1e271f6e7.gif', 'Onii-chan', 'My brother from another Mother', 'stay safe from markass atlas']
     await ctx.send(choice (so))
 
 
-@client.command(name= "batman" help= 'batman fortnite')
+@client.command(name= "batman", help= 'batman fortnite')
 async def batman(ctx):
 	bruce = ['https://cdn.discordapp.com/attachments/779580860935831613/841895402931355648/video0.mp4', 'https://cdn.discordapp.com/attachments/779572154567622682/841097690841743370/3337CF3B-203E-46A5-903B-17430819B3CA.mov', 'Batman Fortnite', 'I am Batman']
 	await ctx.send(choice (bruce))	 
