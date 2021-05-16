@@ -116,15 +116,26 @@ async def batman(ctx):
 	bruce = ['https://cdn.discordapp.com/attachments/779580860935831613/841895402931355648/video0.mp4', 'https://cdn.discordapp.com/attachments/779572154567622682/841097690841743370/3337CF3B-203E-46A5-903B-17430819B3CA.mov', 'Batman Fortnite', 'I am Batman']
 	await ctx.send(choice (bruce))	 
 	
-@client.command(name = "julius_ceaser", help= "Words of wisdom from who played a critical role in the events that led to the demise of the Roman Republic and the rise of the Roman Empire. (Do people even read these!!!)")
-async def Julius_ceaser(ctx):
+@client.command(name = "julius_caesar", help= "Words of wisdom from who played a critical role in the events that led to the demise of the Roman Republic and the rise of the Roman Empire. (Do people even read these!!!)")
+async def julius_caesar(ctx):
     cezza = ['Experience is the teacher of all things.', 'I love treason but hate a traitor.', 'What we wish, we readily believe, and what we ourselves think, we imagine others think also.', 'If you must break the law, do it to seize power: in all other cases observe it.', 'Which death is preferably to every other? ’The unexpected’.', 'I have lived long enough both in years and in accomplishments.', 'Et tu, Brute?', 'The fault, dear Brutus, is not in our stars/ But in ourselves.', 'ceeesaaaaasrrrr'] 
     await ctx.send(choice (cezza))
+
+@client.command(name= "floppa", help=" the mighty") 
+async def floppa(ctx):
+    flop = ['https://i.kym-cdn.com/entries/icons/original/000/034/421/cover1.jpg', 'https://i.ytimg.com/vi/G_u44siEyJo/mqdefault.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGLW2RBDI3MjeNUU473wSBvEZjBUxWIABkRw&usqp=CAU', 'https://i.imgflip.com/4oigcn.jpg', 'https://i.pinimg.com/736x/33/2d/b1/332db19ba58081bfc51ca37ec9c88de3.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bQkPDsUkS6dT6Qbg5GbtSgzo-uUF5ZsTvvq7l_ewZvEJKS3xLrUKgA9L7WdtJxqV4Gk&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCpekbaqcHag6V65-BUeeWI_yM8M6HlKQu-d6MLB3tBh2p7dNewErs1jqCB630omfJ5E&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1nZkQIqNKHad7Xx9t2oxVlTGW-liWQPUr0UGcc177ABNQQ4_R3MbRyvZvcvHe7jwiXY&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMNJdj6iV1Y32Rz80_KNamMsis6G1ekvlAtd--va09xx7aWvZFNvvYAxrOEDp00_4Zic&usqp=CAU', 'https://preview.redd.it/jpga1s11vhk61.png?width=1440&format=png&auto=webp&s=74807deb7fc03c51174044b1e132885bef5333af']
+    await ctx.send(choice (flop))
+
+@client.command(name= "yesorno", help="are you that dumb") 
+async def yesorno(ctx):
+    cho = ['yes', 'no']
+    await ctx.send(choice (cho))
+	
+	
 	
 @tasks.loop(seconds=20)
 async def change_status():
 	await client.change_presence(activity=discord.Game(choice(status)))
-
-  
+ 
 
 client.run(os.getenv('token'))
