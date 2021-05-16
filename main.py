@@ -32,6 +32,7 @@ async def tiger(ctx):
 @client.command(name='skugg', help= 'custom command') 
 async def skugg(ctx):
     await ctx.send('Aeyo Sexy Man')
+
 @client.command(name= 'fatal', help= 'custom command')
 async def fatal(ctx):
     laughter = ['Yo that injury looks fatal', 'uwu senpaii', 'sexy man's sexy friend']
