@@ -116,6 +116,11 @@ async def batman(ctx):
 	bruce = ['https://cdn.discordapp.com/attachments/779580860935831613/841895402931355648/video0.mp4', 'https://cdn.discordapp.com/attachments/779572154567622682/841097690841743370/3337CF3B-203E-46A5-903B-17430819B3CA.mov', 'Batman Fortnite', 'I am Batman']
 	await ctx.send(choice (bruce))	 
 	
+@client.command(name = "julius_ceaser", help= "Words of wisdom from who played a critical role in the events that led to the demise of the Roman Republic and the rise of the Roman Empire. (Do people even read these!!!)")
+async def Julius_ceaser(ctx):
+    cezza = ['Experience is the teacher of all things.', 'I love treason but hate a traitor.', 'What we wish, we readily believe, and what we ourselves think, we imagine others think also.', 'If you must break the law, do it to seize power: in all other cases observe it.', 'Which death is preferably to every other? ’The unexpected’.', 'I have lived long enough both in years and in accomplishments.', 'Et tu, Brute?', 'The fault, dear Brutus, is not in our stars/ But in ourselves.', 'ceeesaaaaasrrrr'] 
+    await ctx.send(choice (cezza))
+	
 @tasks.loop(seconds=20)
 async def change_status():
 	await client.change_presence(activity=discord.Game(choice(status)))
