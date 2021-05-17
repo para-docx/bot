@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.8.9 # This is the action
         with:
-          heroku_api_key: af5160a7-8d90-4a79-9822-71dc7ebbb245
+          heroku_api_key: 971486ee-4870-4001-8193-7d0780b07e32
           heroku_app_name: "hayaai" #Must be unique in Heroku
           heroku_email: "docxpara12@gmail.com"
           docker_heroku_process_type: worker
