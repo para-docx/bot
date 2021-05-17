@@ -35,7 +35,7 @@ async def skugg(ctx):
 
 @client.command(name= 'fatal', help= 'custom command')
 async def fatal(ctx):
-    laughter = ['Yo that injury looks fatal', 'uwu senpaii', 'sexy man's sexy friend']
+    laughter = ['Yo that injury looks fatal', 'uwu senpaii', 'sexy mans sexy friend']
     await ctx.send(choice (laughter))
 
 @client.command(name='jedi', help= 'custom command') 
