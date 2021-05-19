@@ -135,6 +135,19 @@ async def floppa(ctx):
 async def yesorno(ctx):
     cho = ['yes', 'no']
     await ctx.send(choice (cho))
+
+	
+@client.command(name = 'markass', help= 'Custom command for my friend Markass')
+async def markass(ctx):
+    Browmlee= ['https://cdn.discordapp.com/attachments/779577666197389343/837355894304014416/Screenshot_2021-04-29-21-23-16-88_572064f74bd5f9fa804b05334aa4f912.jpg', 'markyboo', 'https://cdn.discordapp.com/attachments/788741047386767390/844204881241309184/image0-185.jpg', 'hes the one.', 'https://i.imgur.com/7DshJqE.jpg', 'https://cdn.discordapp.com/attachments/779577666197389343/836933658412843028/unknown.png', 'https://cdn.discordapp.com/attachments/825762563450208347/844208504460804177/unknown.png', 'Brownass Marklee', 'Foot long', 'https://cdn.discordapp.com/attachments/779577666197389343/801196044070551572/image0.png', 'Ryzen Girl', 'https://cdn.discordapp.com/attachments/779577666197389343/791162558249172992/unknown.png']
+    await ctx.send(choice (Browmlee))  
+
+	
+@client.command(name='hanako', help='custom command for my friend snugg')  
+async def hanako(ctx):
+    amane = ['https://tenor.com/view/smiling-hanako-anime-hanakokun-smile-gif-16236551', 'https://tenor.com/view/tsukaza-toilet-bound-hanakokun-gif-21061643', 'https://tenor.com/view/hanako-toilet-bound-kun-gif-18134872', 'Hey snugg youre awesome', 'https://tenor.com/view/heart-love-anime-hanakokun-heart-shape-gif-16852717', 'https://ih1.redbubble.net/image.1712095670.1074/flat,750x,075,f-pad,750x1000,f8f8f8.jpg', 'https://pm1.narvii.com/7774/2e53535d400717ee501656a515950801ec434b64r1-694-461v2_hq.jpg', 'https://media.tenor.com/images/b95644c56e27ce8e244458c94c0e0f3d/tenor.png']
+    await ctx.send(choice (amane))    
+	
 	
 	
 	
