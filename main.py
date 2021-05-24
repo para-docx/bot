@@ -148,7 +148,11 @@ async def hanako(ctx):
     amane = ['https://tenor.com/view/smiling-hanako-anime-hanakokun-smile-gif-16236551', 'https://tenor.com/view/tsukaza-toilet-bound-hanakokun-gif-21061643', 'https://tenor.com/view/hanako-toilet-bound-kun-gif-18134872', 'Hey snugg youre awesome', 'https://tenor.com/view/heart-love-anime-hanakokun-heart-shape-gif-16852717', 'https://ih1.redbubble.net/image.1712095670.1074/flat,750x,075,f-pad,750x1000,f8f8f8.jpg', 'https://pm1.narvii.com/7774/2e53535d400717ee501656a515950801ec434b64r1-694-461v2_hq.jpg', 'https://media.tenor.com/images/b95644c56e27ce8e244458c94c0e0f3d/tenor.png']
     await ctx.send(choice (amane))    
 	
-	
+@client.command(name='persona', help= 'atlus teen fantasy') 
+async def persona(ctx):
+    Zoker = ['https://tenor.com/view/morgana-fortnite-chug-jug-with-you-gif-20562744', 'https://tenor.com/view/persona-dancing-dance-moves-video-game-gif-17945073', 'IZANAGIIII', 'https://cdn.discordapp.com/attachments/825762563450208347/845297788689580122/RDT_20210521_1921151844502508137153738jpg.jpg', 'https://cdn.discordapp.com/attachments/825762563450208347/845298590196563968/RDT_20210521_1924334488963785709934944jpg.jpg', 'https://cdn.discordapp.com/attachments/825762563450208347/845299312871473182/RDT_20210521_192725587641235393546664jpg.jpg', 'https://www.youtube.com/watch?v=wz65xOwKd9s', 'https://cdn.discordapp.com/attachments/825762563450208347/845300590740897822/RDT_20210521_1931452105787096126387883jpg.jpg', 'https://cdn.discordapp.com/attachments/825762563450208347/845300590317404190/RDT_20210521_1929053187109223972681431jpg.jpg', 'https://cdn.discordapp.com/attachments/825762563450208347/845300589804912650/RDT_20210521_1928481543871330396996020jpg.jpg', 'https://steamuserimages-a.akamaihd.net/ugc/829077318575835900/49D77B03D4EB4B7D0CEA0B0DF7D8434AD17C167D/', 'https://preview.redd.it/n97leva41gu61.jpg?width=640&crop=smart&auto=webp&s=de65e12403ab567f667e76819529e9d8fc39449f', 'https://cdn.discordapp.com/attachments/825762563450208347/845302730208575538/iwato_dormitory.mp3', 'https://cdn.discordapp.com/attachments/665833993249488908/845308877875707904/meme.png', 'https://tenor.com/view/icant-cum-persona3-persona4-persona-icant-gif-18113782', 'https://cdn.discordapp.com/attachments/665833993249488908/845308957799350362/unknown.png', 'https://cdn.discordapp.com/attachments/779572154567622683/845710809971294278/video0-16-1.mp4', 'https://cdn.discordapp.com/attachments/682082597156945977/846017523148259369/536316c.jpg']    
+    await ctx.send(choice(Zoker))
+   	
 	
 	
 @tasks.loop(seconds=20)
