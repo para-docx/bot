@@ -139,7 +139,7 @@ async def yesorno(ctx):
 	
 @client.command(name = 'markass', help= 'Custom command for my friend Markass')
 async def markass(ctx):
-    Browmlee= ['https://cdn.discordapp.com/attachments/779577666197389343/837355894304014416/Screenshot_2021-04-29-21-23-16-88_572064f74bd5f9fa804b05334aa4f912.jpg', 'markyboo', 'https://cdn.discordapp.com/attachments/788741047386767390/844204881241309184/image0-185.jpg', 'hes the one.', 'https://i.imgur.com/7DshJqE.jpg', 'https://cdn.discordapp.com/attachments/779577666197389343/836933658412843028/unknown.png', 'https://cdn.discordapp.com/attachments/825762563450208347/844208504460804177/unknown.png', 'Brownass Marklee', 'Foot long', 'https://cdn.discordapp.com/attachments/779577666197389343/801196044070551572/image0.png', 'Ryzen Girl', 'https://cdn.discordapp.com/attachments/779577666197389343/791162558249172992/unknown.png']
+    Browmlee= ['https://cdn.discordapp.com/attachments/779577666197389343/837355894304014416/Screenshot_2021-04-29-21-23-16-88_572064f74bd5f9fa804b05334aa4f912.jpg', 'markyboo', 'https://cdn.discordapp.com/attachments/788741047386767390/844204881241309184/image0-185.jpg', 'hes the one.', 'https://i.imgur.com/7DshJqE.jpg', 'https://cdn.discordapp.com/attachments/779577666197389343/836933658412843028/unknown.png', 'https://cdn.discordapp.com/attachments/825762563450208347/844208504460804177/unknown.png', 'Brownass Marklee', 'https://cdn.discordapp.com/attachments/825762563450208347/850809778616008754/unknown.png', 'https://cdn.discordapp.com/attachments/779577666197389343/801196044070551572/image0.png', 'Ryzen Girl', 'https://cdn.discordapp.com/attachments/779577666197389343/791162558249172992/unknown.png']
     await ctx.send(choice (Browmlee))  
 
 	
