@@ -157,7 +157,7 @@ async def persona(ctx):
 	
 @tasks.loop(seconds=20)
 async def change_status():
-	await client.change_presence(activity=discord.Streaming(name="Gta grinding with skuggsensei", url= "https://www.twitch.tv/skuggiskug"))
- 
+	await client.change_presence(activity=discord.Streaming(name="with Jedi Bruzza some Persona or Subnautica", url= "https://www.twitch.tv/exokn"))
+  
 
 client.run(os.getenv('token'))
