@@ -9,7 +9,7 @@ import aiohttp
 
 client = commands.Bot(command_prefix="&")
 
-status = ["sus","hey hey","your so sussy", "19$ fortnite card", "sheeeeesh", "lessssgooo"]
+statuses = ["sus","hey hey","your so sussy", "19$ fortnite card", "sheeeeesh", "lessssgooo"]
 
 
 @client.event
@@ -157,7 +157,8 @@ async def persona(ctx):
 	
 @tasks.loop(seconds=20)
 async def change_status():
-	await client.change_presence(activity=discord.Streaming(name=" some valorant with edu gamer dude", url= "https://www.twitch.tv/educatonator"))
+	game = discord.Game("Updates and Evoution")
+        await client.change_presence(status=discord.Status.idle, activity=game)
   
 
 client.run(os.getenv('token'))
