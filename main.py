@@ -16,20 +16,21 @@ statuses = ["sus","hey hey","your so sussy", "19$ fortnite card", "sheeeeesh", "
 async def on_ready():
   change_status.start()
   print ('we have logged in as {0.user}'.format(client))
+
 	
 	
 @client.event
 async def on_message(message):
     if message.content.startswith('&greet'):
         channel = message.channel
-        await channel.send('Say hello!')
+        await channel.send('Say bananarama!')
 
         def check(m):
-            return m.content == 'hello' and m.channel == channel
+            return m.content == 'bananarama' and m.channel == channel
 
         msg = await client.wait_for('message', check=check)
         await channel.send('Hello {.author}!'.format(msg))
-	
+
 
 
 @client.command(name= 'inspire', help='you need it')
