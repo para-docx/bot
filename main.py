@@ -19,18 +19,9 @@ async def on_ready():
 
 	
 	
-@client.event
-async def on_message(message):
-    if message.content.startswith('&greet'):
-        channel = message.channel
-        await channel.send('Say bananarama!')
-
-        def check(m):
-            return m.content == 'bananarama' and m.channel == channel
-
-        msg = await client.wait_for('message', check=check)
-        await channel.send('Hello {.author}!'.format(msg))
-
+@client.command(name='heyo', help='lets haya call you up')
+async def heyo(ctx):
+    await ctx.send(f'Hello {ctx.message.author.mention}! love you')   
 
 
 @client.command(name= 'inspire', help='you need it')
