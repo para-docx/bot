@@ -163,10 +163,9 @@ async def persona(ctx):
 	
 @tasks.loop(seconds=20)
 async def change_status():
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Livinn life Keith Amamiya style, watching jedi grinding P5R", url='https://www.twitch.tv/exokn'))
-	
-    ## game = discord.Game("Updates and Upgrades")
-    ## await client.change_presence(status=discord.Status.dnd, activity=game)
+	    game = discord.Game("Updates and Upgrades")
+            await client.change_presence(status=discord.Status.dnd, activity=game)
   
+        
 
 client.run(os.getenv('token'))
