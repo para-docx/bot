@@ -164,7 +164,8 @@ async def persona(ctx):
 @tasks.loop(seconds=20)
 async def change_status():
 	    game = discord.Game("Updates and Upgrades")
-            await client.change_presence(status=discord.Status.dnd, activity=game)
+            await client.change_presence(status=discord.Status.dnd.
+activity=game)
   
         
 
