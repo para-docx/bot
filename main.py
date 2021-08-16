@@ -102,7 +102,35 @@ async def nasa(ctx):
         nasajson = await requests.json() #json file comversion
     embed = discord.Embed(title = "Nasa pic of the day", color=discord.Colour.purple())    
     embed.set_image(url=nasajson['hdurl'])
-    await ctx.send(embed=embed) #send message	
+    await ctx.send(embed=embed) #send message
+
+@client.command(name= 'pat', help='Pat me Master!!!')
+async def pat(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get('https://some-random-api.ml/animu/pat') #requests
+        patjson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "Haya is happy now!!!", color=discord.Colour.purple())    
+    embed.set_image(url=patjson['link'])
+    await ctx.send(embed=embed) #send message
+
+@client.command(name= 'wink', help='Feeling Naughty???')
+async def wink(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get('https://some-random-api.ml/animu/wink') #requests
+        winkjson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "Sometimes a wink is enough to say everything a thousand words can't :wink:!!!", color=discord.Colour.purple())    
+    embed.set_image(url=winkjson['link'])
+    await ctx.send(embed=embed) #send message
+
+@client.command(name= 'hug', help='You need it sometimes!!')
+async def hug(ctx):
+    async with aiohttp.ClientSession() as session:
+        requests = await session.get('https://some-random-api.ml/animu/hug') #requests
+        ahjson = await requests.json() #json file comversion
+    embed = discord.Embed(title = "And IIIII will Always Love YOUUUUUUUU!!!!!", description = "UWU", color=discord.Colour.dark_magenta())    
+    embed.set_image(url=ahjson['link'])
+    await ctx.send(embed=embed) #send message
+
 
 
 @client.command(name= 'inu', help='doge')
@@ -115,11 +143,6 @@ async def inu(ctx):
 async def toge(ctx):
     inumaki = ['Shake', 'Okaka', 'Tsunamayo', 'Tsuna', 'Takana', 'Mentaiko', 'Konbu', 'Ikura', 'Sujiko', 'https://tenor.com/view/toge-inumaki-jujutsu-kaisen-anime-gif-20440927', 'https://tenor.com/view/toge-inumaki-okaka-jujutsu-kaisen-gif-19663987']
     await ctx.send(choice (inumaki)) #send message
-	
-@client.command(name= "atlas", help= 'Shitland Official')  
-async def atlas(ctx):
-    so = ['https://im2.ezgif.com/tmp/ezgif-2-aba1e271f6e7.gif', 'Onii-chan', 'My brother from another Mother', 'stay safe from markass atlas']
-    await ctx.send(choice (so))
 
 
 @client.command(name= "batman", help= 'batman fortnite')
@@ -143,12 +166,6 @@ async def yesorno(ctx):
     await ctx.send(choice (cho))
 
 	
-@client.command(name = 'markass', help= 'Custom command for my friend Markass')
-async def markass(ctx):
-    Browmlee= ['https://cdn.discordapp.com/attachments/779577666197389343/837355894304014416/Screenshot_2021-04-29-21-23-16-88_572064f74bd5f9fa804b05334aa4f912.jpg', 'markyboo', 'https://cdn.discordapp.com/attachments/788741047386767390/844204881241309184/image0-185.jpg', 'hes the one.', 'https://i.imgur.com/7DshJqE.jpg', 'https://cdn.discordapp.com/attachments/779577666197389343/836933658412843028/unknown.png', 'https://cdn.discordapp.com/attachments/825762563450208347/844208504460804177/unknown.png', 'Brownass Marklee', 'https://cdn.discordapp.com/attachments/825762563450208347/850809778616008754/unknown.png', 'https://cdn.discordapp.com/attachments/779577666197389343/801196044070551572/image0.png', 'Ryzen Girl', 'https://cdn.discordapp.com/attachments/779577666197389343/791162558249172992/unknown.png']
-    await ctx.send(choice (Browmlee))  
-
-	
 @client.command(name='hanako', help='custom command for my friend snugg')  
 async def hanako(ctx):
     amane = ['https://tenor.com/view/smiling-hanako-anime-hanakokun-smile-gif-16236551', 'https://tenor.com/view/tsukaza-toilet-bound-hanakokun-gif-21061643', 'https://tenor.com/view/hanako-toilet-bound-kun-gif-18134872', 'Hey snugg youre awesome', 'https://tenor.com/view/heart-love-anime-hanakokun-heart-shape-gif-16852717', 'https://ih1.redbubble.net/image.1712095670.1074/flat,750x,075,f-pad,750x1000,f8f8f8.jpg', 'https://pm1.narvii.com/7774/2e53535d400717ee501656a515950801ec434b64r1-694-461v2_hq.jpg', 'https://media.tenor.com/images/b95644c56e27ce8e244458c94c0e0f3d/tenor.png']
@@ -163,10 +180,8 @@ async def persona(ctx):
 	
 @tasks.loop(seconds=20)
 async def change_status():
-	    game = discord.Game("Updates and Upgrades")
-            await client.change_presence(status=discord.Status.dnd.
-activity=game)
-  
+    game = discord.Game("Updates and Upgrades")
+    await client.change_presence(status=discord.Status.idle, activity=game)
         
 
 client.run(os.getenv('token'))
