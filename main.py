@@ -9,8 +9,6 @@ import aiohttp
 
 client = commands.Bot(command_prefix="&")
 
-statuses = ["sus","hey hey","your so sussy", "19$ fortnite card", "sheeeeesh", "lessssgooo"]
-
 
 @client.event
 async def on_ready():
