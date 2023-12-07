@@ -28,27 +28,6 @@ async def inspire(ctx):
     json_data = json.loads(response.text)
     quote = json_data[0]['q'] + " -" + json_data[0]['a']
     await ctx.send(quote)
-
-@client.command(name='tiger', help= 'custom command') 
-async def tiger(ctx):
-    await ctx.send('The Mama Bean')    
-
-@client.command(name='skugg', help= 'custom command') 
-async def skugg(ctx):
-    await ctx.send('Aeyo Sexy Man')
-
-@client.command(name= 'fatal', help= 'custom command')
-async def fatal(ctx):
-    laughter = ['Yo that injury looks fatal', 'uwu senpaii', 'sexy mans sexy friend']
-    await ctx.send(choice (laughter))
-
-@client.command(name='jedi', help= 'custom command') 
-async def jedi(ctx):
-    await ctx.send('Dripped out in swag, flooded in sadness') 
-
-@client.command(name='crimsonwolf', help= 'custom command') 
-async def crimsonwolf(ctx):
-    await ctx.send('Aeyo its the wolf :wolfpoggers:go check him out at twitch.tv/twitch_chase05')  
                    
 
 @client.command(name= 'dogpics', help='you need dog pics just use it')
